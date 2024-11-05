@@ -22,10 +22,11 @@ axios
 
     const newListAddress = [];
 
-    newListAddress.forEach((email, numShowEmails, listAddress) =>
-      console.log(email.response)
-    );
+    newListAddress.forEach((email, numShowEmails, listAddress) = {
+        newListAddress.push(email)
+    });
   })
   .catch((error) => {
     console.log("something wrong is happening", error);
   });
+ 
