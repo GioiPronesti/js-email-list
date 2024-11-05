@@ -8,10 +8,14 @@
 */
 axios
   .get("https://flynn.boolean.careers/exercises/api/random/mail")
-  .then((response) => {
+  .then((res) => {
     // codice da eseguire in caso di successo
-    console.log("request is gonna be all right!");
+    console.log("request is gonna be all right!", res.data);
+
+    const listAddress = res.data.response;
+
+    console.log(listAddress);
   })
   .catch((error) => {
-    console.log("something wrong is happening");
+    console.log("something wrong is happening", error);
   });
