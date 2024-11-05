@@ -15,6 +15,16 @@ axios
     const listAddress = res.data.response;
 
     console.log(listAddress);
+
+    const numShowEmails = 10;
+
+    const [email] = listAddress;
+
+    const newListAddress = [];
+
+    newListAddress.forEach((email, numShowEmails, listAddress) =>
+      console.log(email.response)
+    );
   })
   .catch((error) => {
     console.log("something wrong is happening", error);
